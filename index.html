@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Search</title>
+        <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Google Search</a></li>
+                    <li><a href="image_search.html">Image Search</a></li>
+                    <li><a href="advanced_search.html">Advanced Search</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="https://www.google.com/search" method="GET">
+                <img src="google.png" alt="">
+                <input type="text" name="q" placeholder="Search Google" required>
+                <button type="submit">Google Search</button>
+                <button type="button" onclick="window.location.href='https://www.google.com/search?q=' + encodeURIComponent(document.querySelector('input[name=q]').value) + '&btnI';">I'm Feeling Lucky</button>
+            </form>
+        </main>
+    </body>
+
+</html>
